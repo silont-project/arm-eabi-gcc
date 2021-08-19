@@ -4,7 +4,7 @@
 ;;; Don't parse this file wihout knowing GCC gengtype internals.
 ;;; This file should be parsed by the same gengtype which wrote it.
 
-(!version  "11.2.1 20210815")
+(!version  "11.2.1 20210819")
 (!srcdir  "../../gcc/gcc")
 (!languages 11 ada brig c cp d fortran go jit lto objc objcp)
 (!fileslist 222
@@ -13848,7 +13848,7 @@
                        (!type struct 616 
                         (!type already_seen 615)
                         gc_pointed_to "cl_target_option"
-                        (!fileloc  "options.h" 8142)
+                        (!srcfileloc  "config/arm/arm.c" 28098)
                         (!fields 10 
                          (!pair  "x_arm_arch_string"
                           (!type already_seen 11)
@@ -22401,23 +22401,23 @@
   nil 0 nil nil )
  
  (!type struct 1340 nil  gc_pointed_to "inline_entry_data"
-  (!srcfileloc  "dwarf2out.c" 23875)
+  (!srcfileloc  "dwarf2out.c" 23876)
   (!fields 4 
    (!pair  "block"
     (!type already_seen 23)
-    (!srcfileloc  "dwarf2out.c" 23867)
+    (!srcfileloc  "dwarf2out.c" 23868)
     nil )
    (!pair  "label_pfx"
     (!type already_seen 11)
-    (!srcfileloc  "dwarf2out.c" 23870)
+    (!srcfileloc  "dwarf2out.c" 23871)
     nil )
    (!pair  "label_num"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 23871)
+    (!srcfileloc  "dwarf2out.c" 23872)
     nil )
    (!pair  "view"
     (!type already_seen 2)
-    (!srcfileloc  "dwarf2out.c" 23874)
+    (!srcfileloc  "dwarf2out.c" 23875)
     nil )
   )
   (!options 
@@ -22426,7 +22426,7 @@
   2047 nil nil )
  
  (!type struct 1341 nil  gc_used "inline_entry_data_hasher"
-  (!srcfileloc  "dwarf2out.c" 23901)
+  (!srcfileloc  "dwarf2out.c" 23902)
   (!fields 0 )
   nil 2047 nil nil )
  
@@ -22435,26 +22435,26 @@
    (!type already_seen 1342)
   )
   gc_pointed_to "hash_table<inline_entry_data_hasher>"
-  (!srcfileloc  "dwarf2out.c" 23901)
+  (!srcfileloc  "dwarf2out.c" 23902)
   (!fields 1 
    (!pair  "inline_entry_data_hasher"
     (!type already_seen 1341)
-    (!srcfileloc  "dwarf2out.c" 23901)
+    (!srcfileloc  "dwarf2out.c" 23902)
     nil )
   )
  )
  
  (!type struct 1344 nil  gc_unused "macinfo_entry_hasher"
-  (!srcfileloc  "dwarf2out.c" 28419)
+  (!srcfileloc  "dwarf2out.c" 28420)
   (!fields 0 )
   nil 2047 nil nil )
  
  (!type user_struct 1345 nil  gc_unused "hash_table<macinfo_entry_hasher>"
-  (!srcfileloc  "dwarf2out.c" 28419)
+  (!srcfileloc  "dwarf2out.c" 28420)
   (!fields 1 
    (!pair  "macinfo_entry_hasher"
     (!type already_seen 1344)
-    (!srcfileloc  "dwarf2out.c" 28419)
+    (!srcfileloc  "dwarf2out.c" 28420)
     nil )
   )
  )
@@ -22464,16 +22464,16 @@
   nil 0 nil nil )
  
  (!type struct 1347 nil  gc_unused "loc_list_hasher"
-  (!srcfileloc  "dwarf2out.c" 31429)
+  (!srcfileloc  "dwarf2out.c" 31430)
   (!fields 0 )
   nil 2047 nil nil )
  
  (!type user_struct 1348 nil  gc_unused "hash_table<loc_list_hasher>"
-  (!srcfileloc  "dwarf2out.c" 31429)
+  (!srcfileloc  "dwarf2out.c" 31430)
   (!fields 1 
    (!pair  "loc_list_hasher"
     (!type already_seen 1347)
-    (!srcfileloc  "dwarf2out.c" 31429)
+    (!srcfileloc  "dwarf2out.c" 31430)
     nil )
   )
  )
@@ -24464,25 +24464,25 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1613 nil  gc_unused "anonymous:../../gcc/gcc/config/arm/arm.c:2469"nil 
+ (!type struct 1613 nil  gc_unused "anonymous:../../gcc/gcc/config/arm/arm.c:2466"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1614 nil  gc_unused "anonymous:../../gcc/gcc/config/arm/arm.c:3931"nil 
+ (!type struct 1614 nil  gc_unused "anonymous:../../gcc/gcc/config/arm/arm.c:3935"nil 
   (!fields 0 )
   nil 0 nil nil )
  
  (!type struct 1615 nil  gc_unused "libcall_hasher"
-  (!srcfileloc  "config/arm/arm.c" 5752)
+  (!srcfileloc  "config/arm/arm.c" 5756)
   (!fields 0 )
   nil 2047 nil nil )
  
  (!type user_struct 1616 nil  gc_unused "hash_table<libcall_hasher>"
-  (!srcfileloc  "config/arm/arm.c" 5752)
+  (!srcfileloc  "config/arm/arm.c" 5756)
   (!fields 1 
    (!pair  "libcall_hasher"
     (!type already_seen 1615)
-    (!srcfileloc  "config/arm/arm.c" 5752)
+    (!srcfileloc  "config/arm/arm.c" 5756)
     nil )
   )
  )
@@ -29666,7 +29666,7 @@
   )
  )
 )
-(!typedefs 892
+(!typedefs 893
  (!pair  "ivarref_entry"
   (!type already_seen 2243)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3001)
@@ -31015,29 +31015,33 @@
   (!type already_seen 9)
   (!srcfileloc  "passes.c" 917)
   nil )
+ (!pair  "cl_target_option"
+  (!type already_seen 616)
+  (!srcfileloc  "config/arm/arm.c" 28098)
+  nil )
  (!pair  "arm_pragma_enum"
   (!type already_seen 2)
-  (!srcfileloc  "config/arm/arm.c" 7219)
+  (!srcfileloc  "config/arm/arm.c" 7223)
   nil )
  (!pair  "libcall_table_type"
   (!type already_seen 1616)
-  (!srcfileloc  "config/arm/arm.c" 5752)
+  (!srcfileloc  "config/arm/arm.c" 5756)
   nil )
  (!pair  "libcall_hasher"
   (!type already_seen 1615)
-  (!srcfileloc  "config/arm/arm.c" 5752)
+  (!srcfileloc  "config/arm/arm.c" 5756)
   nil )
  (!pair  "hash_table<libcall_hasher>"
   (!type already_seen 1616)
-  (!srcfileloc  "config/arm/arm.c" 5752)
+  (!srcfileloc  "config/arm/arm.c" 5756)
   nil )
  (!pair  "isr_attribute_arg"
   (!type already_seen 1614)
-  (!srcfileloc  "config/arm/arm.c" 3935)
+  (!srcfileloc  "config/arm/arm.c" 3939)
   nil )
  (!pair  "arm_fixed_mode_set"
   (!type already_seen 1613)
-  (!srcfileloc  "config/arm/arm.c" 2472)
+  (!srcfileloc  "config/arm/arm.c" 2469)
   nil )
  (!pair  "Mfix"
   (!type already_seen 1609)
@@ -31493,35 +31497,35 @@
   nil )
  (!pair  "loc_list_hash_type"
   (!type already_seen 1348)
-  (!srcfileloc  "dwarf2out.c" 31429)
+  (!srcfileloc  "dwarf2out.c" 31430)
   nil )
  (!pair  "loc_list_hasher"
   (!type already_seen 1347)
-  (!srcfileloc  "dwarf2out.c" 31429)
+  (!srcfileloc  "dwarf2out.c" 31430)
   nil )
  (!pair  "hash_table<loc_list_hasher>"
   (!type already_seen 1348)
-  (!srcfileloc  "dwarf2out.c" 31429)
+  (!srcfileloc  "dwarf2out.c" 31430)
   nil )
  (!pair  "macinfo_hash_type"
   (!type already_seen 1345)
-  (!srcfileloc  "dwarf2out.c" 28419)
+  (!srcfileloc  "dwarf2out.c" 28420)
   nil )
  (!pair  "macinfo_entry_hasher"
   (!type already_seen 1344)
-  (!srcfileloc  "dwarf2out.c" 28419)
+  (!srcfileloc  "dwarf2out.c" 28420)
   nil )
  (!pair  "hash_table<macinfo_entry_hasher>"
   (!type already_seen 1345)
-  (!srcfileloc  "dwarf2out.c" 28419)
+  (!srcfileloc  "dwarf2out.c" 28420)
   nil )
  (!pair  "inline_entry_data_hasher"
   (!type already_seen 1341)
-  (!srcfileloc  "dwarf2out.c" 23901)
+  (!srcfileloc  "dwarf2out.c" 23902)
   nil )
  (!pair  "hash_table<inline_entry_data_hasher>"
   (!type already_seen 1342)
-  (!srcfileloc  "dwarf2out.c" 23901)
+  (!srcfileloc  "dwarf2out.c" 23902)
   nil )
  (!pair  "external_ref_hash_type"
   (!type already_seen 1334)
@@ -33242,7 +33246,7 @@
   (!srcfileloc  "gengtype.c" 5194)
   nil )
 )
-(!variables 741
+(!variables 742
  (!pair  "objc_eh_personality_decl"
   (!type already_seen 23)
   (!srcfileloc  "objc/objc-next-runtime-abi-02.c" 3844)
@@ -34104,7 +34108,7 @@
   (!type array 2267 nil  gc_used "2" 
    (!type already_seen 23)
   )
-  (!srcfileloc  "fortran/trans-stmt.c" 3241)
+  (!srcfileloc  "fortran/trans-stmt.c" 3243)
   nil )
  (!pair  "dt_parm"
   (!type already_seen 23)
@@ -35353,31 +35357,35 @@
   nil )
  (!pair  "arm_previous_fndecl"
   (!type already_seen 23)
-  (!srcfileloc  "config/arm/arm.c" 32735)
+  (!srcfileloc  "config/arm/arm.c" 32767)
+  nil )
+ (!pair  "last_asm_targ_options"
+  (!type already_seen 615)
+  (!srcfileloc  "config/arm/arm.c" 28098)
   nil )
  (!pair  "tls_get_addr_libfunc"
   (!type already_seen 100)
-  (!srcfileloc  "config/arm/arm.c" 8994)
+  (!srcfileloc  "config/arm/arm.c" 8998)
   nil )
  (!pair  "pic_labelno"
   (!type already_seen 2)
-  (!srcfileloc  "config/arm/arm.c" 8130)
+  (!srcfileloc  "config/arm/arm.c" 8134)
   nil )
  (!pair  "init_optimize"
   (!type already_seen 23)
-  (!srcfileloc  "config/arm/arm.c" 3032)
+  (!srcfileloc  "config/arm/arm.c" 3029)
   nil )
  (!pair  "thumb_flipper"
   (!type already_seen 2)
-  (!srcfileloc  "config/arm/arm.c" 3029)
+  (!srcfileloc  "config/arm/arm.c" 3026)
   nil )
  (!pair  "va_list_type"
   (!type already_seen 23)
-  (!srcfileloc  "config/arm/arm.c" 2825)
+  (!srcfileloc  "config/arm/arm.c" 2822)
   nil )
  (!pair  "speculation_barrier_libfunc"
   (!type already_seen 100)
-  (!srcfileloc  "config/arm/arm.c" 2511)
+  (!srcfileloc  "config/arm/arm.c" 2508)
   nil )
  (!pair  "stack_chk_fail_decl"
   (!type already_seen 23)
@@ -35883,7 +35891,7 @@
   nil )
  (!pair  "inline_entry_data_table"
   (!type already_seen 1343)
-  (!srcfileloc  "dwarf2out.c" 23901)
+  (!srcfileloc  "dwarf2out.c" 23902)
   nil )
  (!pair  "external_die_map"
   (!type already_seen 1328)
