@@ -5499,5 +5499,5 @@ enum insn_code {
   CODE_FOR_mve_vshlcq_m_carry_uv4si = 6238
 };
 
-const unsigned int NUM_INSN_CODES = 6916;
+const unsigned int NUM_INSN_CODES = 6915;
 #endif /* GCC_INSN_CODES_H */
